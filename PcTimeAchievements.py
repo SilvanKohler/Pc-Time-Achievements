@@ -8,43 +8,43 @@ FILE = open("Stunden.dll", "r")
 Stunden = float(FILE.read())
 FILE.close()
 
-Progress1 = (Stunden*10)*100
+Progress1 = (Stunden/10)*10000
 if Progress1 > 10000:
     Progress1 = 10000
-Progress2 = (Stunden)*100
+Progress2 = (Stunden/100)*10000
 if Progress2 > 10000:
     Progress2 = 10000
-Progress3 = (Stunden/10)*100
+Progress3 = (Stunden/1000)*10000
 if Progress3 > 10000:
     Progress3 = 10000
-Progress4 = (Stunden/100)*100
+Progress4 = (Stunden/10000)*10000
 if Progress4 > 10000:
     Progress4 = 10000
-Progress5 = (Stunden/1000)*100
+Progress5 = (Stunden/100000)*10000
 if Progress5 > 10000:
     Progress5 = 10000
-Progress6 = (Stunden/10000)*100
+Progress6 = (Stunden/1000000)*10000
 if Progress6 > 10000:
     Progress6 = 10000
-Progress7 = (Stunden*4.1666666666666666666666666666667)*100
+Progress7 = (Stunden/24)*10000
 if Progress7 > 10000:
     Progress7 = 10000
-Progress8 = (Stunden/29.1662)*100
+Progress8 = (Stunden/168)*10000
 if Progress8 > 10000:
     Progress8 = 10000
-Progress9 = (Stunden/116.6648)*100
+Progress9 = (Stunden/720)*10000
 if Progress9 > 10000:
     Progress9 = 10000
-Progress10 = (Stunden/349.9944)*100
+Progress10 = (Stunden/2160)*10000
 if Progress10 > 10000:
     Progress10 = 10000
-Progress11 = (Stunden/699.9888)*100
+Progress11 = (Stunden/4320)*10000
 if Progress11 > 10000:
     Progress11 = 10000
-Progress12 = (Stunden/1399.9776)*100
+Progress12 = (Stunden/8640)*10000
 if Progress12 > 10000:
     Progress12 = 10000
-Progress13 = (Stunden/13999.776 )*100
+Progress13 = (Stunden/86400)*10000
 if Progress13 > 10000:
     Progress13 = 10000
 class Ui_MainWindow(object):
